@@ -454,22 +454,72 @@
              .e3 input:last-child,.e4 input:last-child,.e5 input:last-child,.e6 input:last-child,.e7 input:last-child,.e8 input:last-child,.e9 input:last-child,.e10 input:last-child,.e11 input:last-child,.e12 input:last-child,.e13 input:last-child,.e14 input:last-child,.e15 input:last-child,.e16 input:last-child{margin:10px 0 0 20px;}               
              .e3 .ee2 a:hover,.e4 .ee3 a:hover,.e5 .ee4 a:hover,.e6 .ee5 a:hover,.e7 .ee6 a:hover,.e8 .ee7 a:hover,.e9 .ee8 a:hover,.e10 .ee9 a:hover,.e11 .ee10 a:hover,.e12 .ee11 a:hover,.e13 .ee12 a:hover,.e14 .ee13 a:hover,.e15 .ee14 a:hover,.e16 .ee15 a:hover{text-decoration: underline;}/*第二个*/
              /*颜色渐变*/
-         #c {width:1032px;
-             height:617px;}
-    
-        #c .cd1{position:relative;
+         #h {width:1100px;
+             height:615px;}
+    #h .hl{margin-top:12px;
+            width:480px;
+            height:605px;
+            float:left;
+            margin-left:100px;}
+        #h .hd1{position:relative;
         	    width:480px;
-                 height:480px;}
-    #c .cd1 div{position:absolute;}
-    
-    
-    
-    
-    
-    
-    
-    
-    
+                 height:480px;
+                 box-shadow: 3px 3px 3px 3px #111111;}
+    #h .hd1 div{position:absolute;
+    width:480px; 
+        height:480px;
+         top:0;
+         left:0;
+         border: solid 1px #CCCCCC;
+         }
+    #h .hd1 div img{width:100%;
+                   height:100%;}
+    #h .hd2{position:relative;
+             width:483px;
+             height:87px;
+           overflow:hidden;
+           margin-top:25px;
+            }
+      #h .hd3{width:9999px;
+                height:87px;
+                position:absolute;
+                top:0;
+                left:0px;}     
+     #h .hd3 div img{width:100%;
+                   height:100%;}
+    #h .hd3 div{width:85px;
+               height:85px;
+               border: solid 1px #CCCCCC;
+               margin-right:4px;
+               float:left;}
+          
+     #h .hd3 input{display:block;
+                 border:none;
+                 background: #CEAB99;
+                 border-radius: 3px;
+                   }
+     #h .hd3 .hd4{margin-left:16px;}    
+     #h .hd3 .hp1{width:15px;
+                  height:87px;
+                  float:left;
+                  position: absolute;
+                  top:0;
+                  left:0;}
+    #h .hd3 .hp2{width:15px;
+                  height:87px;
+                  float:left;
+                  position: absolute;
+                  top:0;
+                  left:468px;
+                  }
+    #h .hr{width:510px;
+          height:545px;
+          float:right;
+          border:solid 1px black;}
+    #h .hd5{width:510px;
+          height:80px;
+          background: url(../img/4thimg/14319500704644.jpg) no-repeat right top;
+          border-bottom:dashed 1px #C8A985;}
     
     
     
