@@ -81,7 +81,7 @@ ul,li{list-style: none;}
           color:black;
           margin-bottom:32px;
          }
-#brr .bp1,#brr .bp3,#brr .bp4,#brr .bp5{width:212px;
+#brr .userPhone,#brr .bp3,#brr .userPass,#brr .bp5{width:212px;
          height:34px;
          margin-bottom: 32px;
          border:solid 1px #cccccc;}
