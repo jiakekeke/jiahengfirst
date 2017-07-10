@@ -24,6 +24,7 @@
 	     margin-top:9px;
 	   line-height: 12px;
 	   float:left;
+	   
 	}
 	
 	#f1 .s1{width:1px;
@@ -454,7 +455,7 @@
              .e3 input:last-child,.e4 input:last-child,.e5 input:last-child,.e6 input:last-child,.e7 input:last-child,.e8 input:last-child,.e9 input:last-child,.e10 input:last-child,.e11 input:last-child,.e12 input:last-child,.e13 input:last-child,.e14 input:last-child,.e15 input:last-child,.e16 input:last-child{margin:10px 0 0 20px;}               
              .e3 .ee2 a:hover,.e4 .ee3 a:hover,.e5 .ee4 a:hover,.e6 .ee5 a:hover,.e7 .ee6 a:hover,.e8 .ee7 a:hover,.e9 .ee8 a:hover,.e10 .ee9 a:hover,.e11 .ee10 a:hover,.e12 .ee11 a:hover,.e13 .ee12 a:hover,.e14 .ee13 a:hover,.e15 .ee14 a:hover,.e16 .ee15 a:hover{text-decoration: underline;}/*第二个*/
              /*颜色渐变*/
-         #h {width:1100px;
+         #h {width:1150px;
              height:615px;}
     #h .hl{margin-top:12px;
             width:480px;
@@ -515,7 +516,9 @@
     #h .hr{width:510px;
           height:545px;
           float:right;
-          border:solid 1px black;}
+          margin-top:35px;
+          margin-left:30px;
+         }
     #h .hd5{width:510px;
           height:80px;
           background: url(../img/4thimg/14319500704644.jpg) no-repeat right top;
@@ -558,21 +561,28 @@
               font-style: normal;
                 }
      #h .hd6 .hpp1{height:28px;
-     width:510px;
+                 width:510px;
      	           line-height:28px;
      	          float:left;
-     	          font-size:14px;
+     	          font-size:12px;
+     	          
      	           }
     #h .hd6 .hpp2{height:28px;
      width:510px;
-     font-size:14px;
+               font-size:12px;
      	           line-height:28px;
      	             float:left;}
-    
+     #h .hd6 .hpp2 span{font-size: 12px;
+                        font-weight: bold;
+                        display:block;
+                        color:#CCCCCC;
+                        margin-right:380px;
+                        float:right;}
     #h .hd6 .hs2{display:block;
                color:red;
                font-size:12px;
                width:510px;
+               margin-top:20px;
                 float:left;
                }
     #h .hd6 em{display:block;
@@ -580,11 +590,14 @@
                line-height:30px;
                 font-size:16px;
                width:50px;
+               font-weight: bold;
+               color: red;
                 font-style: normal;
                height:30px;
                }           
     #h .hd6 .hd10{width:510px;
                  height:30px;
+                 margin:10px 0 ;
                  overflow: hidden;}
     #h .hd6 .hd10 li{float:left;
                      width:40px;
@@ -593,6 +606,7 @@
                       height:28px;}             
     #h .hd6 .hd11{width:510px;
                  height:30px;
+                  margin:10px 0 ;
                  overflow: hidden;}
                  
                #h .hd6 .hp3{float:left;}  
@@ -608,45 +622,190 @@
                        float:left;}
     #h .hd6 .hp5{float:left;}
     #h .hd6 .hd8{width:312px;
+    margin-top:20px;
                 height:88px;
                 float:left;
                 clear: both;
-                
+                color: #999999;
                 border-right:dashed 1px #999999;} 
      #h .hd6 .hd8 p{height:22px;
                  line-height:22px;
                  font-size:12px;
-                      }
+                  overflow: hidden;    }
      
      #h .hd6 .hd8 span{display:block;
                            float:right;}
      
       #h .hd6 .hd12{width:176px;
                      height:58px;
-                     border:solid 1px #111111;}
-      #h .hd6 .hi12{display:block;}
+                     border:solid 1px #999999;
+                     float:left;
+                     
+                       overflow: hidden; 
+                     margin-left:10px;
+                     margin-top:36px;}
+      #h .hd6 .hi12{display:block;
+                   float:left;
+                     margin-top:15px;
+                   width:27px;
+                   clear: both;
+                    height:26px;}
+     #h .hd6 .hd13{width:176px;
+                   height:13px;
+                     overflow: hidden; 
+                   float:left;}
+     #h .hd6 .hd12 p,#h .hd6 .hd12 span{width:130px;
+                                       font-size:12px;
+                                       height:14px;
+                                       float:left;
+                                       margin-top:15px;
+                                       margin-left:10px;}
+    
+    #h .hd6 .hd12 span{color:red;
+                   margin-top:0px;}
+    #h .hd6 .hp6{display:block;
+                width:136px;
+                text-align: center;
+                color: white;
+                background: red;
+                border: none;
+                float:left;
+                  margin-top:10px;
+                font-size: 14px;
+                height:35px;}
+    #h .hd6 .hp7{display:block;
+                width:150px;
+                text-align: center;
+                color: white;
+                 font-size: 14px;
+                float:left;
+                margin-left:15px;
+                margin-top:10px;
+                background: orange;
+                border: none;
+                 height:35px;}
+     #h .hd6 .hd14{width:200px;
+                   height:35px;
+                   float:left;}             
+        #h .hd6 .hd14 dl{float:left;
+                          margin-left:25px;
+                          }          
+        #h .hd6 .hd14 dl img{display:block;
+                               width:30px;
+                               height:30px;}         
+         #h .hd6 .hd14 dl dd{font-size: 12px;font-weight: bolder;
+                               text-align:center ;}        
+      #h .hd6 .hd9{width:510px;
+                 height:81px;
+                  margin-top:210px;
+                 font-size:12px;
+                 } 
+     #h .hd6 .hd9 dl{display:block;
+                    width:85px;
+                   
+                    float:left;
+                    height:81px;}
+         #h .hd6 .hd9  dt{margin-left: 15px;}            
+    #h .hd6 .hd9  dd{text-align: center;}
+    #i{height:30px;
+    overflow:hidden;
+    width:1263px;
+    background:orangered;
+    margin-bottom: 10px;}
+    /*下面的选项卡*/
+    #j{width:1263px;
+     height:5630px;
+       }
+    #jl{width:810px;
+       height:5630px; 
+       float:left;
+       overflow: hidden;
+       margin-left:115px;
+    position:relative;}
+     #jl .ju1{width:810px;
+             height:29px;
+               
+               }
+    #jl .ju1 li{float:left;
+                  width:193px;
+                  height:27px;
+                  border:solid 1px #999999;
+                  text-align: center;
+                  line-height:27px;
+                  font-size: 12px;
+                  color:black;
+                  margin-right:10px;
+                  font-weight: bold;
+                  }
+    #jl .ju1 li:last-child{margin-right:0px;}
+    
+    #jl .jd1, #jl .jd2, #jl .jd3, #jl .jd4{
+    	position: absolute;
+       left:0;
+       top:29px;    	
+    	width:810px;
+       height:5630px;
+       display:none;
+    }
+    #jl .jd1{display:block;
+              
+             padding-left:3px;
+             float:left;}
+    #jl .jd1 dl{
+    	float:left;
+    	width:100px;
+    	height:65px;
+    }
+    #jl .jd1 dl dt{width:10px;
+                  height:10px;
+                  background: #C8A985;
+                  border-radius: 50%;
+                  margin-left:45px;
+                  margin-top:5px;
+                  }
+    #jl .jd1 dl dd{width:102px;
+                      height:44px;
+                      line-height:44px;
+                      text-align: center;
+                       margin-top:6px;
+                       font-size: 12px;
+                       color:#999999;
+                       border-top:solid 2px #5B5B5B;}
+    #jl .jd1 .ji1, #jl .jd1 .ji2{width:600px;
+          margin-left:100px;}
+     #jl .jd1 .ji3 ,#jl .jd1 .ji4{
+     	 display:block;
+     	 width:368px;
+     	 height:190px;
+     	 margin:10px 15px;
+     	float:left;
+     }
+     #jr{float:right;
+      width:178px;
+      margin-right:140px;
+      height:3000px;}
+    #jr .ji5{display:block;
+             margin-bottom:10px;} 
      
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+      #jr .ji6{display:block;
+             margin-bottom:50px;} 
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
      
              

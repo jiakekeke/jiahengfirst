@@ -2,6 +2,26 @@
 	         padding:0;}
 	 ul,li{list-style: none;}
 	 a{text-decoration: none;}
+	 @font-face {
+  font-family: 'iconfont';
+  src: url("../iconfont/iconfont.eot");
+  /* IE9*/
+  src: url("../iconfont/iconfont.eot?#iefix") format("embedded-opentype"), url("../iconfont/iconfont.woff") format("woff"), url("../iconfont/iconfont.ttf") format("truetype"), url("../iconfont/iconfont.svg#iconfont") format("svg");
+  /* iOS 4.1- */ }
+  #c   .iconfont {
+  font-family: "iconfont" !important;
+  font-size: 30px;
+  display: block;
+  float:left;
+  line-height:35px;
+ 
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+	 
+	 
+	 
 	 
 	 #f{width:1263px;
 	    height:30px;
@@ -258,11 +278,12 @@
              /*第二排*/
              #c{width:1263px;
                height:40px;}
-             #c ul{width:1184px;
+             #c ul{width:977px;
                     height:40px;
+                    background: black;
                     padding-left:27px;
                       float:left;
-                      background:#111111 url("../img/c1.jpg") no-repeat right; }  
+                      }  
              #c ul li{float:left;
                        font-size:12px;
                        padding:0 27px;
@@ -270,21 +291,66 @@
                        background: #111111;
                        height:40px;
                        }  
-             #c ul li a {color:#c8a985;}          
+             #c ul li a {color:#c8a985;
+                         }          
              #c ul li:first-child{padding:0 41px;
                                    background: red;
                                     color:white;}
              #c ul li:last-child img{display:block;
                                     float:left;}
              #c ul li:last-child a{display:block;
+                                   height:40px;
                                     float:left;
              	                    line-height:40px;}
-             #c ul li a:hover{color:white;}	                    
-             #c .c1{width:52px;
+         	                    
+             #c ul li a:hover{color:white;}	   
+             #cl1 a:hover{cursor: pointer;
+                           color:white;}                 
+             #c2{width:259px;
                      height:40px;
                      background: #111111;
                      float:left;
                      }
+             #c2 ol{position:relative;
+                  list-style: none;
+                  overflow: hidden;
+                  width:257px;
+                     height:40px;
+                  }        
+             #c2 ol li{
+				position: absolute;
+			    color:#c8a985;
+				width:180px;
+				height:40px;
+				text-align: center;
+				line-height:38px;
+				font-size:12px;
+				background: #111111;
+			}       
+             #li01{top:0;
+				left:130px;	} 
+		        
+              #li02{top:0;
+				left:170px;	}         
+               #li03{top:0;
+				left:210px;	}      
+            #c2 ol li  .iconfont {display:block;
+               width:40px;
+               height:40px;
+            	  overflow: hidden;  }	
+           #c2 ol li span{color:white;
+                        float:left;
+                        overflow: hidden;
+                        margin-left:15px;}  	        
+              #c2 ol li  .iconfont:hover li{color:white;}        
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
              #e{position:relative;}        
                      /*分开*/
              #eu {width:130px;
@@ -1199,7 +1265,7 @@ overflow: hidden;}
      margin-top:10px;
      position:relative;
      overflow: hidden;}
-#ku2{width:672px;
+#ku2{width:9999px;
      height:114px;
      position:absolute;
      top:0px;
@@ -1207,6 +1273,14 @@ overflow: hidden;}
 #ku2 li{width:224px;
      height:114px;
      float:left;}
+#ku2 li:first-child{position: absolute;
+              top:0;
+              left:-448px;}
+   #ku2 li:nth-child(2){
+   	position: absolute;
+              top:0;
+              left:-224px;
+   }                
 #ku2  img{display:block;
         
          width:90px;

@@ -12,7 +12,7 @@ ul,li{list-style: none;}
                   height:89px;
                    float:left;
                    margin-top:10px;}
-#a .as1{width:120px;
+#a .as1{width:130px;
 				margin-top:10px;
                    height:82px;
                     float:left;
@@ -56,9 +56,9 @@ ul,li{list-style: none;}
             }
         #brr span{display:block;
                  font-size:12px;
-                 text-align: center;} 
+                 } 
         #brr input{display:block;
-                
+                  
                    }   
         #brr .bs1{width:112px;
          height:29px;
@@ -79,14 +79,16 @@ ul,li{list-style: none;}
          text-align: right;
          line-height:32px;
           color:black;
-          margin-bottom:32px;
+         float:left;
          }
 #brr .userPhone,#brr .bp3,#brr .userPass,#brr .bp5{width:212px;
          height:34px;
-         margin-bottom: 32px;
+        
          border:solid 1px #cccccc;}
-   #brr .bp5{margin-bottom: 32px;}      
- #brr .bp1{float:left;}        
+   #brr .bp5{}      
+ #brr .bp1{float:left;       
+             width:210px;
+             height:32px;}        
 #brr .bp2{width:72px;
            height:27px;
            font-size:12px;
@@ -99,6 +101,9 @@ ul,li{list-style: none;}
           float:right;
           clear: both;
            }
+ #brr .bp4{
+             width:210px;
+             height:32px;}          
 #brr .bp6{float:left;
         margin-left:62px;
         margin-top:8px;}
@@ -111,10 +116,15 @@ ul,li{list-style: none;}
          display:block;
           height:24px;
          line-height:24px; }
+ #brr .bs10, #brr .bs11, #brr .bs12, #brr .bs13{width:300px;
+         height:32px;
+         margin-left: 72px;
+         line-height: 32px;
+         color:red;
+         float:left;}
 #brr .bp7{display:block;
         width:210px;
          height:30px;
-         
            margin-top:60px;
            margin-left:80px;
          background: red;

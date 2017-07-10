@@ -50,7 +50,16 @@ function getId(str){
 	getId("f4").onmouseout = function(){	
 			getId("f4").style.display="none";
 		}
+			/*cookie*/
 			
+		$(function(){
+			var str =  getCookie("userName");   //
+			
+			if(str==""){
+				
+				$(".faaa1").text("亲，请登陆");
+			}else{$(".faaa1").text(str);}
+		});	
 			/*二级导航*/
 
 	   function show(){
@@ -88,6 +97,43 @@ function getId(str){
 	   }
 	  
 	show();
+/*小手风琴*/
+  var o1 = getId("o1");
+  var oli =o1.getElementsByTagName("li"); 
+	for(let i=0;i<oli.length;i++){
+		oli[i].index = i;
+		oli[i].onmouseover = function(){
+			oli[this.index].style.color="white";
+			if(this.index==0){
+				move(oli[this.index],{"left":i*40+"px"});
+				
+			}else if(this.index==1){
+				move(oli[this.index-1],{"left":i*40+"px"});
+				move(oli[this.index],{"left":(i+1)*40+"px"});
+			}else{
+				move(oli[this.index-2],{"left":i*40+"px"});
+				move(oli[this.index-1],{"left":(i+1)*40+"px"});
+				move(oli[this.index],{"left":(i+2)*40+"px"});
+			}
+		}
+		oli[i].onmouseout = function(){
+			oli[this.index].style.color="#c8a985";
+			if(this.index==0){
+			move(oli[this.index],{"left":170+(this.index-1)*40+"px"});
+			}else if(this.index==1){
+			   move(oli[this.index-1],{"left":170+(this.index-2)*40+"px"});
+				move(oli[this.index],{"left":170+(this.index-1)*40+"px"});			
+			}else{
+				move(oli[this.index-2],{"left":170+(this.index-3)*40+"px"});
+				move(oli[this.index-1],{"left":170+(this.index-2)*40+"px"});
+				move(oli[this.index],{"left":170+(this.index-1)*40+"px"});
+			}
+		}
+	}
+			
+	
+	
+	
 	
 	
 	
@@ -262,27 +308,65 @@ var container = document.getElementsByClassName("container");
 
 
 /*小轮播图*/
-	var oku2 = getId("ku2");
-	var oku3 = getId("ku3");   
-	var okul = getId("kul");
-	var okur = getId("kur"); 
-	var okli=oku2.getElementsByTagName("li")[0];
-	
-	var kWidth = parseInt(getStyle(okli,"width"));
-        var k=0;
-   okur.onclick = function(){
-   	    k++;
-   	    move(oku2,{"left":(-1)*k*kWidth+"px"});
-   }
- okul.onclick = function(){
-   	    k--;
-   	    move(oku2,{"left":(-1)*k*kWidth+"px"});
+     var num=0;
+  $("#kur")[0].onclick = function(){
+   	console.log(num);
+   	  num++; 
+   	    if(num==4){
+   	    	
+   	    	$("#ku2").css("left","0");
+   	    	num=1;	
+   	    	
    	    }
-  
+   	    $("#ku2").stop(true,true).animate({"left":-224*num+"px"},1000);		
+   	   for(var i=0;i<3;i++){
+					
+					$("#ku3 li").eq(i).css("background","black");
+				      }
+   	  
+		$("#ku3 li").eq(num%3).css("background","#c77f40");		
+			
+   }
+ $("#kul")[0].onclick = function(){
+ 	    num--;
+   	     if(num==-3){
+   	     	
+   	$("#ku2").css("left","0px"); 
+   	   num=0; 
+   	    	
+   	    }else{
+   	        $("#ku2").stop(true,true).animate({"left":224*-num+"px"},1000);	
+ 	    
+ 	   }
+   	    
+   	      for(var i=0;i<3;i++){
+					
+					$("#ku3 li").eq(i).css("background","black");
+				      }
+   	  
+		$("#ku3 li").eq(parseFloat(num+3)%3).css("background","#c77f40");	
+	}
+/*点击事件*/
+//  $("#ku3 li").click(function(){
+//  	
+//  	$(this).css("background","#c77f40").siblings().css("background","black");
+//  	
+//  	
+//  });
 
-
-
-
+//for(var i=0;i<3;i++){
+//				
+//				$("#ku3 li").eq(i).click(function(){
+//					
+//						$(this).siblings().css("background","black");
+//					
+//					}) ;
+//				$("#ku3 li").eq(i).css("background","#c77f40");
+//					num = i; //将index复制给m，全局也知道当前是第几张图
+//				$("#ku2").animate({"left":224*num+"px"},1000);	
+//			}
+			
+			
 /*蒙版*/
 /*选项卡*/
     
